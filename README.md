@@ -1,1 +1,1 @@
-# scroll-smooth-menu
+# Scroll Smooth Menu
