@@ -17,8 +17,6 @@ function smoothScroll(){
 function setNavigation(){
 	var sections = $('.section');
 	var header = $('header');
-
-	// Captura a altura do header
 	var headerHeight = header.outerHeight();
 
 	$(window).on('scroll', function(){
@@ -35,9 +33,8 @@ function setNavigation(){
 		});
 	})
 
-	// Quando houver um recarregamento na página
 	var currentPosReload = $(window).scrollTop();
-
+	
 	sections.each(function(){
 		var top = $(this).offset().top - headerHeight;
 		var bottom = top + $(this).outerHeight();
